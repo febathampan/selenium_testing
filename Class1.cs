@@ -17,6 +17,7 @@ public class InsuranceQuotesTest
     private IWebDriver driver;
     public IDictionary<string, object> vars { get; private set; }
     private IJavaScriptExecutor js;
+
     [SetUp]
     public void SetUp()
     {
@@ -258,7 +259,7 @@ public class InsuranceQuotesTest
     }
     [Test]
     public void insuranceQuote08_37and8andNA_AccidentInfoRequired()
-    {        
+    {
         //Arrange
 
         driver.Navigate().GoToUrl(baseUrl);
@@ -615,4 +616,3 @@ public class InsuranceQuotesTest
         Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
     }
 }
-
