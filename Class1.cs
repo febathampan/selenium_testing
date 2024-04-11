@@ -220,7 +220,6 @@ public class InsuranceQuotesTest
     public void insuranceQuote07_NAand5and0_AgeError()
     {
         //Arrange
-
         driver.Navigate().GoToUrl(baseUrl);
         driver.Manage().Window.Size = new System.Drawing.Size(1046, 652);
 
